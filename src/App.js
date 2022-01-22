@@ -1,7 +1,12 @@
+// Codes By Mahdi Tasha
+// Importing Components
+import Log_in from "./Pages/log-in/log-in.js";
+
+// The App Function That Contains Pages And Components
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+        <Log_in />
     </div>
   );
 }
