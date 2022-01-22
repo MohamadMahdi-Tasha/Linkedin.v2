@@ -2,7 +2,9 @@
 // The Login Page
 // Importing Part
 import React, { Component } from "react";
-import './../../styles/styles.scss';
+
+const date = new Date();
+const thisYear = date.getFullYear();
 
 // A Class Component That Holds login Page Elements
 class Log_in extends Component {
@@ -39,7 +41,7 @@ class Log_in extends Component {
                                 <h5 className={'c-blue'}>
                                     Linkedin
                                     &copy;
-                                    <span id={"year"}>2021</span>
+                                    <span>{thisYear}</span>
                                 </h5>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 // Importing Components
 import Log_in from "./Pages/log-in/log-in.js";
+import './styles/styles.scss';
 
 // The App Function That Contains Pages And Components
 function App() {
