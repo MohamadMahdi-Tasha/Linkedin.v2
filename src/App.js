@@ -1,8 +1,9 @@
 // Codes By Mahdi Tasha
 // Importing Components
+import './styles/styles.scss';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Log_in from "./Pages/log-in/log-in.js";
-import './styles/styles.scss';
+import Sign_Up from "./Pages/sign-up/sign-up";
 
 // The App Function That Contains Pages And Components
 function App() {
@@ -15,7 +16,7 @@ function App() {
                             <Log_in/>
                         </Route>
                         <Route path={"/signup"}>
-                            <h1>asdasdasdasdasdada</h1>
+                            <Sign_Up />
                         </Route>
                     </Switch>
                 </div>

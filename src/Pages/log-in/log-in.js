@@ -1,5 +1,4 @@
 // Codes By Mahdi Tasha
-// The Login Page
 // Importing Part
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
@@ -19,8 +18,8 @@ class Log_in extends Component {
                     <main className="width-80">
                         <form action="#">
                             <h1 className={'c-blue mb-1'}>Welcome</h1>
-                            <input className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Email"} type="email"/>
-                            <input className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Password"} type="password"/>
+                            <input className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Email"} type="email" id={'login-email'}/>
+                            <input className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Password"} type="password" id={'login-password'}/>
                             <a href="#">Forgot Password ?</a>
                             <div className="login-and-signup width-100 dis-inline-flex mt-2 mb-3">
                                 <button className={'mr-1 bgc-blue c-white border-none btn-hover-dark-blue width-50'} type={'submit'}>Login</button>
