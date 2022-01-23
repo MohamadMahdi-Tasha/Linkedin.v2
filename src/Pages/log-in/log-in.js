@@ -2,6 +2,7 @@
 // The Login Page
 // Importing Part
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 const date = new Date();
 const thisYear = date.getFullYear();
@@ -23,7 +24,9 @@ class Log_in extends Component {
                             <a href="#">Forgot Password ?</a>
                             <div className="login-and-signup width-100 dis-inline-flex mt-2 mb-3">
                                 <button className={'mr-1 bgc-blue c-white border-none btn-hover-dark-blue width-50'} type={'submit'}>Login</button>
-                                <button className={'width-50 btn-bgnone-hover p1 bg-none border-1-white c-blue'}>Sign Up</button>
+                                <Link to={'/signup'} className={"width-50"}>
+                                    <button className={'width-100 btn-bgnone-hover p1 bg-none border-1-white c-blue'}>Sign Up</button>
+                                </Link>
                             </div>
                         </form>
                         <div className="footer-links">

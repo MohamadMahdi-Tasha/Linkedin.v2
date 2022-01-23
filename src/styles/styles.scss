@@ -70,7 +70,7 @@ button {cursor: pointer;}
     .login-and-signup {
       display: flex;
       flex-direction: column;
-      button {
+      button , > :last-child{
         width: 100% !important;
       }
       > :first-child {
