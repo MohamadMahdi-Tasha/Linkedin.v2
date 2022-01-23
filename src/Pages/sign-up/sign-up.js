@@ -32,7 +32,7 @@ class Sign_Up extends Component {
                                     <input required type="password" placeholder={'Password'} id={'signup-password'} name={'signup-password'} className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'}/>
                                 </div>
                             </div>
-                            <button className={'bgc-blue c-white border-none btn-hover-dark-blue width-10 p1 mb-1'} type='submit'>Agree And Join</button>
+                            <button className={'bgc-blue c-white border-none btn-hover-dark-blue width-100 p1 mb-1'} type='submit'>Agree And Join</button>
                         </form>
                         <div className={'dis-inline-flex width-100 dis-flex ai-center mb-1'}>
                             <div className={'mr-1  dis-flex jc-center ai-center width-50'}>

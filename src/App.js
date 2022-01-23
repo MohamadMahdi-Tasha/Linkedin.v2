@@ -12,11 +12,10 @@ function App() {
             <div className="App">
                 <div className="content">
                     <Switch>
-                        <Route path="/" exact>
-                            <Log_in/>
-                        </Route>
-                        <Route path={"/signup"}>
-                            <Sign_Up />
+                        <Route path={"/"} exact><Log_in/></Route>
+                        <Route path={"/signup"}><Sign_Up /></Route>
+                        <Route path={'/feed'}>
+                            <h3>Feed Page</h3>
                         </Route>
                     </Switch>
                 </div>

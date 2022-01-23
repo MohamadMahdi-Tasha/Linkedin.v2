@@ -55,6 +55,17 @@ button {cursor: pointer;}
 .ml-1 {margin-left: 1rem;}
 .bc-blue {border-color: $blue-color !important;}
 .c-dark-blue {color: $dark-blue-color;}
+.p-fixed {position: fixed;}
+.bg-dark-rgba {background-color: rgba(0,0,0,.2);}
+.h-100 {height: 100%;}
+.bgc-white {background-color: white;}
+.jc-end {justify-content: end;}
+.width-10 {width: 10%;}
+.fs-2 {font-size: 2rem;}
+.c-red {color: red;}
+.transition {transition: .3s;}
+.opacity-0 {opacity: 0%;}
+.pointer-none {pointer-events: none;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 860px) {
@@ -80,6 +91,10 @@ button {cursor: pointer;}
         width: 100%;
       }
     }
+  }
+
+  .modal {
+    width: 80%;
   }
 }
 
