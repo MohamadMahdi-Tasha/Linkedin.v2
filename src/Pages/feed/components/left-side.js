@@ -2,7 +2,7 @@
 // Importing Part
 import React, {Component} from "react";
 import Profile_Picture, {color} from './../../../components/profile-picture';
-import { login_email } from './../../log-in/log-in';
+import { login_name } from './../../log-in/log-in';
 
 // A Class Component That Holds Left Side Elements Of Feed Page
 class Left_Side extends Component {
@@ -13,9 +13,9 @@ class Left_Side extends Component {
                     <div className="top-side border-bottom-1-light-black">
                         <div className={'banner-picture mb-1 width-100 p2'} style={{backgroundColor: color}}></div>
                         <div className={'dis-flex jc-center'}>
-                            <Profile_Picture first_name={login_email.slice(0,1).toUpperCase()}/>
+                            <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()}/>
                         </div>
-                        <h3 className={'w-100 dis-flex jc-center mt-1'} style={{color: color}}>Hello {login_email}</h3>
+                        <h3 className={'w-100 dis-flex jc-center mt-1'} style={{color: color}}>Hello {login_name}</h3>
                         <a className={'width-100 dis-flex mb-1 jc-center'} href="#">Add A Photo</a>
                     </div>
                     <div className="middle-side dis-flex flex-d-c">

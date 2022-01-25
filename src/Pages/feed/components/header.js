@@ -1,9 +1,10 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import React, { Component } from "react";
-import {login_email} from "../../log-in/log-in";
+import {login_name} from "../../log-in/log-in";
 import Profile_Picture from "../../../components/profile-picture";
 
+// Class Components That Holds All Header Elements
 class Header extends Component {
     render() {
         return (
@@ -50,7 +51,7 @@ class Header extends Component {
                     </a>
                     <a href="#">
                         <button>
-                            <Profile_Picture first_name={login_email.slice(0,1).toUpperCase()}/>
+                            <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()}/>
                             <div>
                                 Me
                                 <i className="bi bi-chevron-compact-down"></i>
@@ -72,4 +73,5 @@ class Header extends Component {
     }
 }
 
+// Exporting Header Component
 export default Header;

@@ -8,7 +8,7 @@ import Modal, { showModal } from './../../components/modal';
 const date = new Date();
 const thisYear = date.getFullYear();
 
-export let login_email;
+export let login_name;
 export let login_password;
 
 // A Class Component That Holds login Page Elements
@@ -29,10 +29,10 @@ class Log_in extends Component {
                             <a href="#">Forgot Password ?</a>
                             <div id={'link-holders'} className="login-and-signup width-100 dis-inline-flex mt-2 mb-3">
                                 <Link id={'feed-link'} to={'/feed'} className={'width-50 mr-1'} onClick={() => {
-                                    login_email = document.getElementById('login-name').value;
+                                    login_name = document.getElementById('login-name').value;
                                     login_password = document.getElementById('login-password').value;
                                     if (
-                                        login_email,
+                                        login_name,
                                         login_password === ''
                                     ) {
                                         showModal();
