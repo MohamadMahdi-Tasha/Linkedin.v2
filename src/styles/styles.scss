@@ -82,8 +82,23 @@ button {cursor: pointer;}
 .list-unstyle {list-style: none;}
 .jc-start {justify-content: start;}
 .show-on-mobile {display: none;}
+.m-0 {margin: 0 !important;}
+.pdot5 {padding: 0.5rem;}
+.w-auto {width: auto !important;}
+.h-auto {height: auto !important;}
+.border-bottom-c-none {border-bottom: 1.5px solid rgba(0,0,0,0);}
+.header-btn-active {border-bottom: 1.5px solid $dark-blue-color;color: $dark-blue-color;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
+@media (max-width: 1037px) {
+  header {
+    .left-side {width: auto;}
+    .right-side {width: 100%;}
+    .search-div {width: auto;}
+    .search-input {display: none;}
+  }
+}
+
 @media (max-width: 860px) {
   .left-side-feed {
     width: 100%;
@@ -117,6 +132,14 @@ button {cursor: pointer;}
 
   .modal {
     width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    .right-side {
+      display: none;
+    }
   }
 }
 
