@@ -7,7 +7,7 @@ import Left_side from './components/left-side';
 class Feed extends Component {
     render() {
         return (
-            <div className={'feed-page bgc-light-blue'}>
+            <div className={'feed-page bgc-light-blue minh-100vh dis-flex jc-center'}>
                 <Left_side />
             </div>
         );

@@ -1,57 +1,61 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import React, {Component} from "react";
-import Profile_Picture from './../../../components/profile-picture';
+import Profile_Picture, {color} from './../../../components/profile-picture';
+import { login_email } from './../../log-in/log-in';
 
 // A Class Component That Holds Left Side Elements Of Feed Page
 class Left_Side extends Component {
     render() {
         return (
-            <div className="left-side width-20 p1">
-                <div className="top-card bgc-white mb-1 roundeddot5">
-                    <div className="top-side p1 border-bottom-1-light-black">
-                        <Profile_Picture first_name={'M'}/>
-                        <div className={'profile-pic'}></div>
-                        <h3>Hello Mahdi</h3>
-                        <a href="#">Add A Photo</a>
-                    </div>
-                    <div className="midlle-side">
-                        <div className={'connections'}>
-                            <h5>Connections</h5>
-                            <i className="bi bi-people-fill"></i>
+            <div className="left-side-feed width-25 p2">
+                <div className="top-card ov-hidden border-1-light-black shadow bgc-white mb-1 roundeddot5">
+                    <div className="top-side border-bottom-1-light-black">
+                        <div className={'banner-picture mb-1 width-100 p2'} style={{backgroundColor: color}}></div>
+                        <div className={'dis-flex jc-center'}>
+                            <Profile_Picture first_name={login_email.slice(0,1).toUpperCase()}/>
                         </div>
-                        <h4>Grow You Network</h4>
-                        <button className={'items'}>
-                            <h5>
-                                My Items
-                                <i className="bi bi-bookmark-fill"></i>
-                            </h5>
+                        <h3 className={'w-100 dis-flex jc-center mt-1'} style={{color: color}}>Hello {login_email}</h3>
+                        <a className={'width-100 dis-flex mb-1 jc-center'} href="#">Add A Photo</a>
+                    </div>
+                    <div className="middle-side dis-flex flex-d-c">
+                        <button className={'connections p1 bg-none-btn-hover bg-none border-none border-bottom-1-light-black'}>
+                            <div className="dis-inline-flex jc-sb width-100 ai-center">
+                                <h5 className={'c-light-black'}>Connections</h5>
+                                <i className="bi bi-people-fill"></i>
+                            </div>
+                            <h4 className={'width-100 dis-flex'}>Grow You Network</h4>
+                        </button>
+                        <button className={'items bg-none-btn-hover bg-none border-none p1 ai-center'}>
+                            My Items
+                            <i className="bi bi-bookmark-fill ml-1"></i>
                         </button>
                     </div>
                 </div>
-                <div className="bottom-card">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <button>Groups</button>
+                <button className={'width-100 p1 border-none bgc-white bg-none-btn-hover border-1-light-black roundeddot5 shadow show-on-mobile'}>See More</button>
+                <div className="bottom-side bgc-white shadow ov-hidden roundeddot5">
+                    <ul className={'list-unstyle'}>
+                        <li className={'width-100'}>
+                            <a className={'width-100'} href="#">
+                                <button className={'width-100 bg-none border-none p1 dis-flex bg-none-btn-hover jc-start'}>Groups</button>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <button>
+                        <li className={'width-100'}>
+                            <a className={'width-100'} href="#">
+                                <button className={'width-100 bg-none border-none p1 dis-flex bg-none-btn-hover jc-start'}>
                                     Events
                                     <i className="bi bi-plus"></i>
                                 </button>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <button>Followed Hashtags</button>
+                        <li className={'width-100'}>
+                            <a className={'width-100'} href="#">
+                                <button className={'width-100 bg-none border-none p1 dis-flex bg-none-btn-hover jc-start'}>Followed Hashtags</button>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <button>Discover More</button>
+                        <li className={'width-100'}>
+                            <a className={'width-100'} href="#">
+                                <button className={'width-100 bg-none border-none p1 dis-flex bg-none-btn-hover jc-start'}>Discover More</button>
                             </a>
                         </li>
                     </ul>
@@ -61,4 +65,5 @@ class Left_Side extends Component {
     }
 }
 
+// Exporting Left Side Component
 export default Left_Side;

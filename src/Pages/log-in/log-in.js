@@ -8,6 +8,9 @@ import Modal, { showModal } from './../../components/modal';
 const date = new Date();
 const thisYear = date.getFullYear();
 
+export let login_email;
+export let login_password;
+
 // A Class Component That Holds login Page Elements
 class Log_in extends Component {
     render() {
@@ -21,15 +24,17 @@ class Log_in extends Component {
                     <main className="width-80">
                         <form action="#">
                             <h1 className={'c-blue mb-1'}>Welcome</h1>
-                            <input required className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Email"} type="email" id={'login-email'}/>
+                            <input required className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Name"} type="text" id={'login-name'}/>
                             <input required className={'width-100 p1 border-none bg-skyblue roundeddot5 input-hover-focus c-blue placeholder-blue mb-1 outline-none'} placeholder={"Password"} type="password" id={'login-password'}/>
                             <a href="#">Forgot Password ?</a>
                             <div id={'link-holders'} className="login-and-signup width-100 dis-inline-flex mt-2 mb-3">
                                 <Link id={'feed-link'} to={'/feed'} className={'width-50 mr-1'} onClick={() => {
-                                    const login_email = document.getElementById('login-email');
-                                    const login_password = document.getElementById('login-password');
-
-                                    if (login_email.value, login_password.value === '') {
+                                    login_email = document.getElementById('login-name').value;
+                                    login_password = document.getElementById('login-password').value;
+                                    if (
+                                        login_email,
+                                        login_password === ''
+                                    ) {
                                         showModal();
                                         this.setAttribute('to', '/');
                                     }
