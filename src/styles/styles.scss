@@ -88,6 +88,7 @@ button {cursor: pointer;}
 .h-auto {height: auto !important;}
 .border-bottom-c-none {border-bottom: 1.5px solid rgba(0,0,0,0);}
 .header-btn-active {border-bottom: 1.5px solid $dark-blue-color;color: $dark-blue-color;}
+.mt-5 {margin-top: 5rem;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {

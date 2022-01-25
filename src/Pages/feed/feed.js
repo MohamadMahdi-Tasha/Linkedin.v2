@@ -10,7 +10,7 @@ class Feed extends Component {
         return (
             <div className={'feed-page bgc-light-blue minh-100vh dis-flex jc-center'}>
                 <Header />
-                {/*<Left_side />*/}
+                <Left_side />
             </div>
         );
     }

@@ -8,12 +8,12 @@ import { login_name } from './../../log-in/log-in';
 class Left_Side extends Component {
     render() {
         return (
-            <div className="left-side-feed width-25 p2">
+            <div className="left-side-feed width-25 p2 mt-5">
                 <div className="top-card ov-hidden border-1-light-black shadow bgc-white mb-1 roundeddot5">
                     <div className="top-side border-bottom-1-light-black">
                         <div className={'banner-picture mb-1 width-100 p2'} style={{backgroundColor: color}}></div>
                         <div className={'dis-flex jc-center'}>
-                            <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()}/>
+                            <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()} className={'p1 circle w-4rem h-4rem dis-flex jc-center ai-center'}/>
                         </div>
                         <h3 className={'w-100 dis-flex jc-center mt-1'} style={{color: color}}>Hello {login_name}</h3>
                         <a className={'width-100 dis-flex mb-1 jc-center'} href="#">Add A Photo</a>
