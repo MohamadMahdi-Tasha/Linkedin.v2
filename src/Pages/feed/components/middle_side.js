@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import Profile_Picture from "../../../components/profile-picture";
 import {login_name} from "../../log-in/log-in";
+import Profile_Cards from "../../../components/name-card";
 
 // A Class Component That Holds All Middle Side Component Elements
 class Middle_side extends Component{
@@ -45,6 +46,7 @@ class Middle_side extends Component{
                 <div>
                     <h3>{login_name}, Want Even More Updates?</h3>
                     <p>Add these people you may know to your network, and you'll see their updates <br/> in the feed.</p>
+                    <Profile_Cards />
                 </div>
             </div>
         );
