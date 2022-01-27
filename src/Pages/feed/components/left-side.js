@@ -9,7 +9,7 @@ class Left_Side extends Component {
     render() {
         return (
             <div className="left-side-feed width-25 p2 mt-5">
-                <div className="top-card ov-hidden border-1-light-black shadow bgc-white mb-1 roundeddot5">
+                <div className="top-card ov-hidden border-1-light-black bgc-white mb-1 roundeddot5">
                     <div className="top-side border-bottom-1-light-black">
                         <div className={'banner-picture mb-1 width-100 p2'} style={{backgroundColor: color}}></div>
                         <div className={'dis-flex jc-center'}>
@@ -32,8 +32,8 @@ class Left_Side extends Component {
                         </button>
                     </div>
                 </div>
-                <button className={'width-100 p1 border-none bgc-white bg-none-btn-hover border-1-light-black roundeddot5 shadow show-on-mobile'}>See More</button>
-                <div className="bottom-side bgc-white shadow ov-hidden roundeddot5">
+                <button className={'width-100 p1 border-none bgc-white bg-none-btn-hover border-1-light-black roundeddot5 show-on-mobile'}>See More</button>
+                <div className="bottom-side bgc-white ov-hidden roundeddot5">
                     <ul className={'list-unstyle'}>
                         <li className={'width-100'}>
                             <a className={'width-100'} href="#">
