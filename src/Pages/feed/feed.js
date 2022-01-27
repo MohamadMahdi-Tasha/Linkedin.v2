@@ -9,9 +9,9 @@ import Middle_side from './components/middle_side';
 class Feed extends Component {
     render() {
         return (
-            <div className={'feed-page bgc-light-blue minh-100vh'}>
+            <div className={'bgc-light-blue minh-100vh'}>
                 {/*<Header />*/}
-                <div className={'dis-inline-flex jc-center width-100 ai-center'}>
+                <div className={'feed-page dis-inline-flex jc-center width-100 ai-center'}>
                     <Left_side />
                     <Middle_side />
                 </div>

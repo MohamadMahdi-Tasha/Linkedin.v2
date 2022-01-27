@@ -90,6 +90,12 @@ button {cursor: pointer;}
 .header-btn-active {border-bottom: 1.5px solid $dark-blue-color;color: $dark-blue-color;}
 .mt-5 {margin-top: 5rem;}
 .m-2 {margin-right: 2rem;}
+.z-index99 {z-index: 99;}
+.mt-negative2 {margin-top: -2rem;}
+.w-5rem {width: 5rem;}
+.h-5rem {height: 5rem;}
+.h-5rem {height: 5rem;}
+.rounded1 {border-radius: 2rem;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
@@ -99,15 +105,27 @@ button {cursor: pointer;}
     .search-div {width: auto;}
     .search-input {display: none;}
   }
-}
 
-@media (max-width: 860px) {
   .left-side-feed {
     width: 100%;
     .bottom-side , .middle-side{display: none;}
     .show-on-mobile {display: block;}
   }
 
+  .feed-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle-side {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .profile_cards {width: 100% !important;}
+}
+
+@media (max-width: 860px) {
   .log-in-page {
     display: flex;
     flex-direction: column;
@@ -131,10 +149,7 @@ button {cursor: pointer;}
       }
     }
   }
-
-  .modal {
-    width: 80%;
-  }
+  .modal {width: 80%;}
 }
 
 @media (max-width: 650px) {

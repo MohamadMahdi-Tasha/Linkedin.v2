@@ -3,13 +3,13 @@
 import React, { Component } from "react";
 import Profile_Picture from "../../../components/profile-picture";
 import {login_name} from "../../log-in/log-in";
-import Profile_Cards from "../../../components/name-card";
+import Profile_Cards from "../../../components/profile-card";
 
 // A Class Component That Holds All Middle Side Component Elements
 class Middle_side extends Component{
     render() {
         return (
-            <div className={'width-50 h-100'}>
+            <div className={'width-50 h-100 middle-side'}>
                 <div>
                     <div>
                         <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()} className={'p1 circle w-4rem h-4rem dis-flex jc-center ai-center'}/>
