@@ -178,21 +178,23 @@ class Middle_side extends Component{
                         <a className={'width-100 dis-flex jc-center ai-center'} href="#">Discover More</a>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className={'mt-1 bgc-white roundeddot5 border-1-light-black ov-hidden'}>
+                    <div className={'width-100 dis-flex jc-sb pdot5 ai-center border-bottom-1-light-black'}>
                         <h6>Add to your feed</h6>
-                        <button><i className="bi bi-three-dots"></i></button>
+                        <button className={'w-2rem h-2rem circle bg-none border-none bg-none-btn-hover'}><i className="bi bi-three-dots"></i></button>
                     </div>
-                    <ul>
+                    <ul className={'list-unstyle'}>
                         <li><ProfilesToFollow image={image1} name={name1} followersNumber={'55,123'}/></li>
                         <li><ProfilesToFollow image={image2} name={name2} followersNumber={'155,493'}/></li>
-                        <li><ProfilesToFollow image={image3} name={name3} followersNumber={'2,234'}/></li>
+                        <li><ProfilesToFollow image={image3} name={name3} followersNumber={'2,234'} borderBottom={false}/></li>
                     </ul>
                     <div className={'width-100 bgc-white border-top-1-light-black p1 bg-none-btn-hover'}>
-                        <a className={'width-100 dis-flex jc-center ai-center'} href="#">Discover More</a>
+                        <a className={'width-100 dis-flex jc-center ai-center'} href="#">See More</a>
                     </div>
                 </div>
-                <button>See New Posts</button>
+                <div className={'dis-flex jc-center ai-center mt-1'}>
+                    <button className={'pdot5 border-1-white rounded1 c-blue bg-none btn-bgnone-hover'}>See New Posts</button>
+                </div>
             </div>
         );
     }

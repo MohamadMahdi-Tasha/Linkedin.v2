@@ -17,7 +17,7 @@ function Profile_Cards(props) {
                     <span style={{marginRight: '.5rem'}} id={'firstName'}>{props.firstName}</span>
                     <span id={'lastName'}>{props.lastName}</span>
                 </h3>
-                <h4 className={'w-100 dis-flex jc-center ai-center'} style={{color: '#5f5f5f'}}>Based On Your Profile</h4>
+                <h6 className={'w-100 dis-flex jc-center ai-center c-light-gray'} style={{color: '#5f5f5f'}}>Based On Your Profile</h6>
                 <a href="#" className={'width-100 dis-flex jc-center ai-center'}>
                     <button className={'bg-none border-1-white c-blue width-80 btn-bgnone-hover pdot5 rounded1 mt-1'}>Connect</button>
                 </a>
