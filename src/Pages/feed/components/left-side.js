@@ -13,7 +13,7 @@ class Left_Side extends Component {
                     <div className="top-side border-bottom-1-light-black">
                         <div className={'banner-picture mb-1 width-100 p2'} style={{backgroundColor: color}}></div>
                         <div className={'dis-flex jc-center'}>
-                            <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()} className={'p1 circle w-4rem h-4rem dis-flex jc-center ai-center'}/>
+                            <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()} className={'p1 mt-negative3 shadow circle w-4rem h-4rem dis-flex jc-center ai-center'}/>
                         </div>
                         <h3 className={'w-100 dis-flex jc-center mt-1'} style={{color: color}}>Hello {login_name}</h3>
                         <a className={'width-100 dis-flex mb-1 jc-center'} href="#">Add A Photo</a>
