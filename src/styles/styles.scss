@@ -44,10 +44,7 @@ button {cursor: pointer;}
 .c-white {color: white;}
 .width-50 {width: 50%;}
 .btn-hover-dark-blue:hover {background-color: $dark-blue-color;}
-.btn-bgnone-hover:hover {
-  background-color: $blue-color;
-  color: white;
-}
+.btn-bgnone-hover:hover {background-color: $blue-color;color: white;}
 .bg-none {background-color: unset;}
 .border-1-white {border: 1px solid $blue-color;}
 .jc-sb {justify-content: space-between;}
@@ -109,6 +106,7 @@ button {cursor: pointer;}
 .bg-none-btn-hover-light:hover {background-color: #f5f5f5;}
 .c-light-gray {color: #b4b4b4;}
 .border-top-1-light-black {border-top: 1px solid $light-black;}
+.c-black {color: black;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
