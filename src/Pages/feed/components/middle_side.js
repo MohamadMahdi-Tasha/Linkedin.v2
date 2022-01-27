@@ -46,7 +46,6 @@ fetch('https://randomuser.me/api/')
     .then((data) => {
         image1 = data.results[0].picture.medium;
         name1 = data.results[0].name.first;
-        console.log(image1 + name1);
     })
 
 fetch('https://randomuser.me/api/')
@@ -129,7 +128,7 @@ class Middle_side extends Component{
                             <input className={'width-100 bgc-light-blue p1 border-none rounded1 placeholder-blue input-hover-focus outline-none'} type={'text'} placeholder="Start A Post"/>
                         </form>
                     </div>
-                    <div className={'width-100 dis-inline-flex jc-sb'}>
+                    <div className={'media-types width-100 dis-inline-flex jc-sb'}>
                         <a href="#">
                             <button className={'bg-none pdot5 dis-flex ai-center jc-center bg-none-btn-hover-light border-none roundeddot5'}>
                                 <i className="bi fs-1dot5 c-light-sky-blue mr-dot5 bi-card-image"></i>
@@ -163,12 +162,12 @@ class Middle_side extends Component{
                         <div className={'dis-flex jc-center mb-1'}>
                             <p className={'c-light-gray'}>Add these people you may know to your network, and you'll see their updates <br/><span className={'dis-flex jc-center'}>in the feed.</span></p>
                         </div>
-                        <div className={'dis-inline-flex jc-sb mb-1 width-100'}>
+                        <div className={'profile_cards-holder dis-inline-flex jc-sb mb-1 width-100'}>
                             <Profile_Cards image={ProfileCardsImage1} firstName={firstName1} lastName={lastName1} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
                             <Profile_Cards image={ProfileCardsImage2} firstName={firstName2} lastName={lastName2} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
                             <Profile_Cards image={ProfileCardsImage3} firstName={firstName3} lastName={lastName3} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35'}/>
                         </div>
-                        <div className={'dis-inline-flex jc-sb width-100 mb-1'}>
+                        <div className={'profile_cards-holder dis-inline-flex jc-sb width-100 mb-1'}>
                             <Profile_Cards image={ProfileCardsImage4} firstName={firstName4} lastName={lastName4} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
                             <Profile_Cards image={ProfileCardsImage5} firstName={firstName5} lastName={lastName5} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
                             <Profile_Cards image={ProfileCardsImage6} firstName={firstName6} lastName={lastName6} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35'}/>

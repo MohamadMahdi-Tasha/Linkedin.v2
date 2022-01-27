@@ -171,6 +171,24 @@ button {cursor: pointer;}
       display: none;
     }
   }
+
+  .profile_cards-holder {
+    display: flex;
+    flex-direction: column;
+    > .profile_cards {margin: 0 0 1rem 0;}
+  }
+
+  .media-types {
+    display: flex;
+    flex-direction: column;
+    > a {
+      width: 100%;
+      > button  {
+        width: 100%;
+        justify-content: start;
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
