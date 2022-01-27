@@ -15,6 +15,30 @@ let name1;
 let name2;
 let name3;
 
+let firstName1;
+let lastName1;
+let ProfileCardsImage1;
+
+let firstName2;
+let lastName2;
+let ProfileCardsImage2;
+
+let firstName3;
+let lastName3;
+let ProfileCardsImage3;
+
+let firstName4;
+let lastName4;
+let ProfileCardsImage4;
+
+let firstName5;
+let lastName5;
+let ProfileCardsImage5;
+
+let firstName6;
+let lastName6;
+let ProfileCardsImage6;
+
 // Fetching An Api For Fake Image
 fetch('https://randomuser.me/api/')
     .then((response) => response.json())
@@ -30,7 +54,6 @@ fetch('https://randomuser.me/api/')
     .then((data) => {
         image2 = data.results[0].picture.medium;
         name2 = data.results[0].name.first;
-        console.log(image2 + name2);
     })
 
 fetch('https://randomuser.me/api/')
@@ -38,7 +61,60 @@ fetch('https://randomuser.me/api/')
     .then((data) => {
         image3 = data.results[0].picture.medium;
         name3 = data.results[0].name.first;
-        console.log(image3 + name3);
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        firstName1 = data.results[0].name.first;
+        lastName1 = data.results[0].name.last;
+        ProfileCardsImage1 = data.results[0].picture.medium;
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        firstName2 = data.results[0].name.first;
+        lastName2 = data.results[0].name.last;
+        ProfileCardsImage2 = data.results[0].picture.medium;
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        firstName3 = data.results[0].name.first;
+        lastName3 = data.results[0].name.last;
+        ProfileCardsImage3 = data.results[0].picture.medium;
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        firstName4 = data.results[0].name.first;
+        lastName4 = data.results[0].name.last;
+        ProfileCardsImage4 = data.results[0].picture.medium;
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        firstName5 = data.results[0].name.first;
+        lastName5 = data.results[0].name.last;
+        ProfileCardsImage5 = data.results[0].picture.medium;
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        firstName6 = data.results[0].name.first;
+        lastName6 = data.results[0].name.last;
+        ProfileCardsImage6 = data.results[0].picture.medium;
     })
 
 // A Class Component That Holds All Middle Side Component Elements
@@ -88,14 +164,14 @@ class Middle_side extends Component{
                             <p className={'c-light-gray'}>Add these people you may know to your network, and you'll see their updates <br/><span className={'dis-flex jc-center'}>in the feed.</span></p>
                         </div>
                         <div className={'dis-inline-flex jc-sb mb-1 width-100'}>
-                            <Profile_Cards className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
-                            <Profile_Cards className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
-                            <Profile_Cards className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35'}/>
+                            <Profile_Cards image={ProfileCardsImage1} firstName={firstName1} lastName={lastName1} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
+                            <Profile_Cards image={ProfileCardsImage2} firstName={firstName2} lastName={lastName2} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
+                            <Profile_Cards image={ProfileCardsImage3} firstName={firstName3} lastName={lastName3} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35'}/>
                         </div>
                         <div className={'dis-inline-flex jc-sb width-100 mb-1'}>
-                            <Profile_Cards className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
-                            <Profile_Cards className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
-                            <Profile_Cards className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35'}/>
+                            <Profile_Cards image={ProfileCardsImage4} firstName={firstName4} lastName={lastName4} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
+                            <Profile_Cards image={ProfileCardsImage5} firstName={firstName5} lastName={lastName5} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
+                            <Profile_Cards image={ProfileCardsImage6} firstName={firstName6} lastName={lastName6} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35'}/>
                         </div>
                     </div>
                     <div className={'width-100 bgc-white border-top-1-light-black p1 bg-none-btn-hover'}>
