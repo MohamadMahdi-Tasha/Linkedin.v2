@@ -1,7 +1,5 @@
 // Codes By Mahdi Tasha
 // Importing Part
-import React from "react";
-
 let firstName;
 let lastName;
 let image;

@@ -4,6 +4,42 @@ import React, { Component } from "react";
 import Profile_Picture from "../../../components/profile-picture";
 import {login_name} from "../../log-in/log-in";
 import Profile_Cards from "../../../components/profile-card";
+import ProfilesToFollow from "../../../components/profiles-to-follow";
+
+// Savin Values That They Are Returned From An Api
+let image1;
+let image2;
+let image3;
+
+let name1;
+let name2;
+let name3;
+
+// Fetching An Api For Fake Image
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    // Do This When Data Has Arrived
+    .then((data) => {
+        image1 = data.results[0].picture.medium;
+        name1 = data.results[0].name.first;
+        console.log(image1 + name1);
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    .then((data) => {
+        image2 = data.results[0].picture.medium;
+        name2 = data.results[0].name.first;
+        console.log(image2 + name2);
+    })
+
+fetch('https://randomuser.me/api/')
+    .then((response) => response.json())
+    .then((data) => {
+        image3 = data.results[0].picture.medium;
+        name3 = data.results[0].name.first;
+        console.log(image3 + name3);
+    })
 
 // A Class Component That Holds All Middle Side Component Elements
 class Middle_side extends Component{
@@ -69,54 +105,12 @@ class Middle_side extends Component{
                 <div>
                     <div>
                         <h6>Add to your feed</h6>
-                        <i className="bi bi-three-dots"></i>
+                        <button><i className="bi bi-three-dots"></i></button>
                     </div>
                     <ul>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <div className={'profile_img'}></div>
-                                    <div>
-                                        Name
-                                        1000 Followers
-                                    </div>
-                                    <button>
-                                        <i className="bi bi-plus"></i>
-                                        Follow
-                                    </button>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <div className={'profile_img'}></div>
-                                    <div>
-                                        Name
-                                        1000 Followers
-                                    </div>
-                                    <button>
-                                        <i className="bi bi-plus"></i>
-                                        Follow
-                                    </button>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <div className={'profile_img'}></div>
-                                    <div>
-                                        Name
-                                        1000 Followers
-                                    </div>
-                                    <button>
-                                        <i className="bi bi-plus"></i>
-                                        Follow
-                                    </button>
-                                </div>
-                            </a>
-                        </li>
+                        <li><ProfilesToFollow image={image1} name={name1} followersNumber={'55,123'}/></li>
+                        <li><ProfilesToFollow image={image2} name={name2} followersNumber={'155,493'}/></li>
+                        <li><ProfilesToFollow image={image3} name={name3} followersNumber={'2,234'}/></li>
                     </ul>
                     <div className={'width-100 bgc-white border-top-1-light-black p1 bg-none-btn-hover'}>
                         <a className={'width-100 dis-flex jc-center ai-center'} href="#">Discover More</a>
