@@ -66,6 +66,63 @@ class Middle_side extends Component{
                         <a className={'width-100 dis-flex jc-center ai-center'} href="#">Discover More</a>
                     </div>
                 </div>
+                <div>
+                    <div>
+                        <h6>Add to your feed</h6>
+                        <i className="bi bi-three-dots"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <div className={'profile_img'}></div>
+                                    <div>
+                                        Name
+                                        1000 Followers
+                                    </div>
+                                    <button>
+                                        <i className="bi bi-plus"></i>
+                                        Follow
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <div className={'profile_img'}></div>
+                                    <div>
+                                        Name
+                                        1000 Followers
+                                    </div>
+                                    <button>
+                                        <i className="bi bi-plus"></i>
+                                        Follow
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <div className={'profile_img'}></div>
+                                    <div>
+                                        Name
+                                        1000 Followers
+                                    </div>
+                                    <button>
+                                        <i className="bi bi-plus"></i>
+                                        Follow
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div className={'width-100 bgc-white border-top-1-light-black p1 bg-none-btn-hover'}>
+                        <a className={'width-100 dis-flex jc-center ai-center'} href="#">Discover More</a>
+                    </div>
+                </div>
+                <button>See New Posts</button>
             </div>
         );
     }
