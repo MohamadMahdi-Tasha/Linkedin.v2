@@ -60,6 +60,7 @@ class Right_Side extends Component {
                         <RecomendedFeed className={'dis-inline-flex ai-center width-100'} image={img3} firstName={firstName3} lastName={lastName3} job={'Full Stack Developer'}/>
                     </div>
                 </div>
+                <div className={'width-100 h-20rem bgc-white roundeddot5 border-1-light-black'}></div>
             </div>
         );
     }

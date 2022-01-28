@@ -123,7 +123,7 @@ class Middle_side extends Component{
             <div className={'width-50 h-100 middle-side'}>
                 <div className={'p1 bgc-white width-100 roundeddot5 border-1-light-black mb-1'}>
                     <div className={'dis-inline-flex width-100 ai-center mb-1'}>
-                        <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()} className={'p1 mr-1 circle w-4rem h-4rem dis-flex jc-center ai-center'}/>
+                        <Profile_Picture first_name={login_name.slice(0,1).toUpperCase()} className={'middle-side-new-post-profile-pic p1 mr-1 circle w-4rem h-4rem dis-flex jc-center ai-center'}/>
                         <form className={'width-100'} action="#">
                             <input className={'width-100 bgc-light-blue p1 border-none rounded1 placeholder-blue input-hover-focus outline-none'} type={'text'} placeholder="Start A Post"/>
                         </form>
@@ -191,8 +191,8 @@ class Middle_side extends Component{
                         <a className={'width-100 dis-flex jc-center ai-center'} href="#">See More</a>
                     </div>
                 </div>
-                <div className={'dis-flex jc-center ai-center mt-1'}>
-                    <button className={'pdot5 border-1-white rounded1 c-blue bg-none btn-bgnone-hover'}>See New Posts</button>
+                <div className={'dis-flex see-new-post-btn-holder jc-center ai-center mt-1 mb-1'}>
+                    <button className={'see-new-post-btn pdot5 border-1-white rounded1 c-blue bg-none btn-bgnone-hover'}>See New Posts</button>
                 </div>
             </div>
         );

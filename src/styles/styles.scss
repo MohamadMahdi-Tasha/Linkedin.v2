@@ -117,6 +117,7 @@ button {cursor: pointer;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
+  .middle-side-new-post-profile-pic {display: none;}
   header {
     .left-side {width: auto;}
     .right-side {width: 100%;}
@@ -126,6 +127,13 @@ button {cursor: pointer;}
 
   .left-side-feed {
     width: 100%;
+    overflow: visible;
+    padding: 0;
+    margin-bottom: 2rem;
+    > :first-child {
+      overflow: visible;
+    }
+    .p2 {padding: 0;}
     .bottom-side , .middle-side{display: none;}
     .show-on-mobile {display: block;}
   }
@@ -137,10 +145,20 @@ button {cursor: pointer;}
 
   .middle-side {
     width: 100%;
-    padding: 2rem;
+    margin-right: 0;
   }
 
   .profile_cards {width: 100% !important;}
+
+  .right-side {
+    width: auto !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .see-new-post-btn {
+    width: 30%;
+  }
 }
 
 @media (max-width: 860px) {
@@ -234,5 +252,9 @@ button {cursor: pointer;}
         width: 100%;
       }
     }
+  }
+
+  .see-new-post-btn {
+    width: 80%;
   }
 }
