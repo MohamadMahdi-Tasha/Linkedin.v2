@@ -48,15 +48,17 @@ fetch('https://randomuser.me/api/')
 class Right_Side extends Component {
     render() {
         return (
-            <div className={'right-side'}>
-                <div>
-                    <h3>Add To Your Feed</h3>
-                    <i className="bi bi-info-circle-fill"></i>
-                </div>
-                <div className={'dis-flex flex-d-c'}>
-                    <RecomendedFeed image={img1} firstName={firstName1} lastName={lastName1} job={'Front End Developer'}/>
-                    <RecomendedFeed image={img2} firstName={firstName2} lastName={lastName2} job={'Back End Developer'}/>
-                    <RecomendedFeed image={img3} firstName={firstName3} lastName={lastName3} job={'Full Stack Developer'}/>
+            <div className={'right-side dis-flex flex-d-c width-25 ml-2'}>
+                <div className={'bgc-white roundeddot5 border-1-light-black mb-1'}>
+                    <div className={'dis-inline-flex width-100 jc-sb mb-1 p1 border-bottom-1-light-black'}>
+                        <h3>Add To Your Feed</h3>
+                        <i className="bi bi-info-circle-fill"></i>
+                    </div>
+                    <div className={'dis-flex flex-d-c p1'}>
+                        <RecomendedFeed className={'dis-inline-flex ai-center width-100 mb-1'} image={img1} firstName={firstName1} lastName={lastName1} job={'Front End Developer'}/>
+                        <RecomendedFeed className={'dis-inline-flex ai-center width-100 mb-1'} image={img2} firstName={firstName2} lastName={lastName2} job={'Back End Developer'}/>
+                        <RecomendedFeed className={'dis-inline-flex ai-center width-100'} image={img3} firstName={firstName3} lastName={lastName3} job={'Full Stack Developer'}/>
+                    </div>
                 </div>
             </div>
         );

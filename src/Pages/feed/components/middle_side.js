@@ -160,7 +160,7 @@ class Middle_side extends Component{
                     <div className={'p1'}>
                         <h3 className={'width-100 dis-flex jc-center mt-2'}>{login_name}, Want Even More Updates?</h3>
                         <div className={'dis-flex jc-center mb-1'}>
-                            <p className={'c-light-gray'}>Add these people you may know to your network, and you'll see their updates <br/><span className={'dis-flex jc-center'}>in the feed.</span></p>
+                            <p className={'c-light-gray dis-inline-flex width-100 jc-center fs-dot75'}>Add these people you may know to your network, and you'll see their updates in the feed.</p>
                         </div>
                         <div className={'profile_cards-holder dis-inline-flex jc-sb mb-1 width-100'}>
                             <Profile_Cards image={ProfileCardsImage1} firstName={firstName1} lastName={lastName1} className={'profile_cards bgc-white roundeddot5 border-1-light-black ov-hidden width-35 mr-dot5'}/>
