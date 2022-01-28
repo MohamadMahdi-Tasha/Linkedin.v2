@@ -53,7 +53,7 @@ class Right_Side extends Component {
                     <h3>Add To Your Feed</h3>
                     <i className="bi bi-info-circle-fill"></i>
                 </div>
-                <div>
+                <div className={'dis-flex flex-d-c'}>
                     <RecomendedFeed image={img1} firstName={firstName1} lastName={lastName1} job={'Front End Developer'}/>
                     <RecomendedFeed image={img2} firstName={firstName2} lastName={lastName2} job={'Back End Developer'}/>
                     <RecomendedFeed image={img3} firstName={firstName3} lastName={lastName3} job={'Full Stack Developer'}/>
