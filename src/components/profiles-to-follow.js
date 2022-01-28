@@ -1,5 +1,5 @@
 // Codes By Mahdi Tasha
-// A Class Component That Holds All Element Of Profile To Follow
+// A Function Component That Holds All Element Of Profile To Follow
 function ProfilesToFollow(props) {
     if (!props.borderBottom) {
         return (
