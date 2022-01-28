@@ -8,7 +8,7 @@ import Profile_Picture from "./profile-picture";
 class Header extends Component {
     render() {
         return (
-            <header className={'p-fixed bgc-white width-100 dis-inline-flex'}>
+            <header className={'p-fixed bgc-white width-100 dis-inline-flex fixed-top shadow'} style={{zIndex: '999'}}>
                 <div className="left-side width-50 dis-inline-flex ai-center mr-1">
                     <i className="bi bi-linkedin fs-3 mr-1 c-blue ml-1"></i>
                     <div className={'search-div bg-skyblue width-100 pdot5 roundeddot5 dis-inline-flex ai-center input-hover-focus'}>

@@ -11,8 +11,8 @@ class Feed extends Component {
     render() {
         return (
             <div className={'bgc-light-blue minh-100vh'}>
-                {/*<Header />*/}
-                <div className={'feed-page dis-inline-flex jc-center width-100 p1'}>
+                <Header />
+                <div className={'feed-page dis-inline-flex jc-center width-100 p1 mt-5'}>
                     <Left_side />
                     <Middle_side />
                     <Right_side />

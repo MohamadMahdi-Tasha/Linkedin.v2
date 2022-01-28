@@ -12,6 +12,7 @@
 }
 a {text-decoration: none;color: $blue-color !important;}
 button {cursor: pointer;}
+header {top: 0;}
 
 // Styles
 .dis-inline-flex {display: inline-flex;}
@@ -50,7 +51,7 @@ button {cursor: pointer;}
 .jc-sb {justify-content: space-between;}
 .blur-bg {backdrop-filter: blur(10px);}
 .flex-d-c {flex-direction: column;}
-.shadow {box-shadow: 0 0 40px $light-black}
+.shadow {box-shadow: 0 0 30px $light-black}
 .b-bottom {border-bottom: 1px solid black;}
 .ml-1 {margin-left: 1rem;}
 .bc-blue {border-color: $blue-color !important;}
