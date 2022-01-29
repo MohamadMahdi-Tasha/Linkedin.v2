@@ -8,7 +8,7 @@ function ProfilesToFollow(props) {
                     <div className={'dis-inline-flex ai-center'}>
                         <div className={'w-4rem h-4rem bg-size-cover mr-1'} style={{backgroundImage: `url(${props.image})`}}></div>
                         <div>
-                            <h3 className={'c-black fw'}>{props.name}</h3>
+                            <h3 className={'c-black'}>{props.name}</h3>
                             <h5 className={'c-light-gray'}>{props.followersNumber} Followers</h5>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ function ProfilesToFollow(props) {
                     <div className={'dis-inline-flex ai-center'}>
                         <div className={'w-4rem h-4rem bg-size-cover mr-1'} style={{backgroundImage: `url(${props.image})`}}></div>
                         <div>
-                            <h3 className={'c-black fw'}>{props.name}</h3>
+                            <h3 className={'c-black'}>{props.name}</h3>
                             <h5 className={'c-light-gray'}>{props.followersNumber} Followers</h5>
                         </div>
                     </div>

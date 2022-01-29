@@ -1,7 +1,11 @@
 // Codes By Mahdi Tasha
 // Importing Part
-@import "variables.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+// Variables
+$blue-color: #0a66c2;
+$dark-blue-color: #0757a8;
+$light-black: rgba(0,0,0,.2);
 
 // Default Styles
 * {
