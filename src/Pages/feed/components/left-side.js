@@ -8,8 +8,8 @@ import { login_name } from './../../log-in/log-in';
 class Left_Side extends Component {
     render() {
         return (
-            <div className="left-side-feed width-25 p2 mt-5">
-                <div className="top-card ov-hidden border-1-light-black bgc-white mb-1 roundeddot5">
+            <div className="left-side-feed width-25 mr-2">
+                <div className="top-card border-1-light-black ov-hidden bgc-white mb-1 roundeddot5">
                     <div className="top-side border-bottom-1-light-black">
                         <div className={'banner-picture mb-1 width-100 p2'} style={{backgroundColor: color}}></div>
                         <div className={'dis-flex jc-center'}>
