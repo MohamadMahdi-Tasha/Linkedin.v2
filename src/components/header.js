@@ -59,12 +59,12 @@ class Header extends Component {
                             </button>
                         </a>
                         <a href="#">
-                            <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
+                            <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'} onClick={showSettingComponent}>
                                 <i className="bi bi-person-fill"></i>
                                 Me
                             </button>
                         </a>
-                        <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100'} onClick={showSettingComponent}>
+                        <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100'}>
                             <i className="bi bi-grid-3x3-gap-fill"></i>
                             Works
                         </button>
