@@ -120,9 +120,10 @@ header {top: 0;}
 .pb-1 {padding-bottom: 1rem;}
 .pb-0 {padding-bottom: 0;}
 .pr-1 {padding-right: 1rem;}
-//.show-on-click {display: none;}
+.show-on-click {display: none;}
 .pointer-visible {pointer-events: visible;}
 .pdot75 {padding: 0.75rem;}
+.mt-5 {margin-top: 5rem;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
@@ -130,6 +131,7 @@ header {top: 0;}
     left: 0;
     top: 10%;
     width: 100%;
+    margin-top: 0;
     > .settings {
       width: 100%;
     }

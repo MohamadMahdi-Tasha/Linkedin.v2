@@ -17,7 +17,6 @@ class Feed extends Component {
                     <Left_side />
                     <Middle_side />
                     <Right_side />
-                    <Settings />
                 </div>
             </div>
         );
