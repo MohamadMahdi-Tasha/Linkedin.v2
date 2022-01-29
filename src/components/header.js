@@ -6,10 +6,17 @@ import Settings from "./settings";
 let tap = 0;
 function showSettingComponent() {
     const settingComponent = document.getElementById('setting-component');
+    const bg_dark_header = document.getElementById('bg-dark-header');
 
     tap ++;
-    if (tap % 2 !== 0) {settingComponent.classList.remove('show-on-click');}
-    else {settingComponent.classList.add('show-on-click');}
+    if (tap % 2 !== 0) {
+        settingComponent.classList.remove('show-on-click');
+        bg_dark_header.classList.remove('show-on-click');
+    }
+    else {
+        settingComponent.classList.add('show-on-click');
+        bg_dark_header.classList.add('show-on-click');
+    }
 }
 
 // Class Components That Holds All Header Elements
@@ -68,7 +75,8 @@ class Header extends Component {
                         </button>
                     </div>
                 </header>
-                <Settings id={'setting-component'} className="setting-holder transition pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
+                <div id={'bg-dark-header'} className={'bg-dark-rgba show-on-click p-fixed width-100 h-100'} style={{zIndex: '997'}}></div>
+                <Settings id={'setting-component'} className="setting-holder pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
             </>
         );
     }
