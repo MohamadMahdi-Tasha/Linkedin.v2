@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import Settings from "./settings";
 
+// A Function That Shows Setting Component When Clicked
 let tap = 0;
 function showSettingComponent() {
     const settingComponent = document.getElementById('setting-component');
