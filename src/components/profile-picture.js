@@ -8,7 +8,7 @@ export const color = `rgb(${random_color1},${random_color2},${random_color3})`;
 // A Function Component That Holds A Profile Picture Element
 function Profile_Picture(props) {
     return (
-        <div className={'profile-circle p1 w-4rem h-4rem circle dis-flex jc-center ai-center mt-negative3 shadow'} className={props.className} style={{backgroundColor: color}}>
+        <div className={props.className} style={{backgroundColor: color}}>
             <h3>{props.first_name}</h3>
         </div>
     );

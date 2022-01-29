@@ -5,6 +5,7 @@ import Left_side from './components/left-side';
 import Header from '../../components/header';
 import Middle_side from './components/middle_side';
 import Right_side from "./components/right_side";
+import Settings from "../../components/settings";
 
 // A Class Component That Holds All Elements Of Feed Page/Route
 class Feed extends Component {
@@ -16,6 +17,7 @@ class Feed extends Component {
                     <Left_side />
                     <Middle_side />
                     <Right_side />
+                    <Settings />
                 </div>
             </div>
         );
