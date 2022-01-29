@@ -120,9 +120,18 @@ header {top: 0;}
 .pb-1 {padding-bottom: 1rem;}
 .pb-0 {padding-bottom: 0;}
 .pr-1 {padding-right: 1rem;}
+//.show-on-click {display: none;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
+  .setting-holder {
+    left: 0;
+    top: 10%;
+    width: 100%;
+    > .settings {
+      width: 100%;
+    }
+  }
   .middle-side-new-post-profile-pic {display: none;}
   header {
     .left-side {width: auto;}
@@ -215,6 +224,23 @@ header {top: 0;}
       > button  {
         width: 100%;
         justify-content: start;
+      }
+    }
+  }
+
+  .settings {
+    width: 70%;
+    left: 0;
+    margin-left: 1rem;
+    margin-right: 1rem !important;
+    > :first-child  > :first-child{
+      display: flex;
+      flex-direction: column;
+      > :first-child {margin-bottom: 1rem;}
+      > :last-child > h4,h6{
+        width: 100%;
+        display: flex;
+        justify-content: center;
       }
     }
   }

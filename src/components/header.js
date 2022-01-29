@@ -1,8 +1,6 @@
 // Codes By Mahdi Tasha
 // Importing Part
 import React, { Component } from "react";
-import {login_name} from "../Pages/log-in/log-in";
-import Profile_Picture from "./profile-picture";
 
 // Class Components That Holds All Header Elements
 class Header extends Component {
