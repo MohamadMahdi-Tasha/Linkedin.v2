@@ -1,16 +1,16 @@
 // Codes By Mahdi Tasha
 // A Function Component That Holds Right Side Work Components Element
-function WorkRightSide(props) {
+function WorkRightSide() {
     return (
         <div className={'dis-flex jc-end'}>
             <div style={{zIndex: '997'}} className={'p-fixed width-100 bg-dark-rgba h-100'}></div>
-            <div style={{zIndex: '999'}} className={'p-fixed bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'}>
+            <div style={{zIndex: '999'}} className={'work-right-side p-fixed bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'}>
                 <div className={'width-100 dis-flex jc-end'}>
                     <button aria-label={'close'} className={'bg-none border-none transition-dot2 mb-1 bg-none-btn-hover w-3rem h-3rem circle'}><i className="bi bi-x-lg fs-1"></i></button>
                 </div>
                 <div className={'border-1-light-black roundeddot5'}>
                     <div className={'p1 border-bottom-1-light-black'}><h5>Visit More LinkedIn Products</h5></div>
-                    <div className={'p1'}>
+                    <div className={'p1 div1-items'}>
                         <div className={'dis-inline-flex width-100 jc-sb ai-center'}>
                             <a href="#" className={'mr-dot5'}>
                                 <button className={'width-100 dis-flex flex-d-c jc-center c-blue ai-center bg-none border-1-light-black pdot5 btn-hover-dark-blue hover-c-white roundeddot5'}>

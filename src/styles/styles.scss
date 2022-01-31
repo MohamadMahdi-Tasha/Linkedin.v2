@@ -142,6 +142,10 @@ header {top: 0;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
+  .work-right-side {
+    width: 75%;
+    margin-top: 4rem;
+  }
   .setting-holder {
     left: 0;
     top: 10%;
@@ -223,6 +227,8 @@ header {top: 0;}
 }
 
 @media (max-width: 650px) {
+  .work-right-side {width: 100%;}
+
   header {
     .right-side {
       display: none;
@@ -266,6 +272,18 @@ header {top: 0;}
 }
 
 @media (max-width: 425px) {
+  .div1-items {
+    > :first-child, :last-child {
+      display: flex;
+      flex-direction: column;
+      > a {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
   .log-in-page {
     .login-and-signup {
       display: flex;
