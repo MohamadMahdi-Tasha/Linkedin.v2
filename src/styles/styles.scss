@@ -137,6 +137,8 @@ header {top: 0;}
 .h-3rem {height: 3rem;}
 .transition-dot2 {transition: .2s;}
 .ov-scroll {overflow: scroll;}
+.scroller-none::-webkit-scrollbar {display: none;}
+.mb-5 {margin-bottom: 5rem;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {

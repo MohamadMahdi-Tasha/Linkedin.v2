@@ -4,9 +4,9 @@ function WorkRightSide(props) {
     return (
         <div className={'dis-flex jc-end'}>
             <div style={{zIndex: '997'}} className={'p-fixed width-100 bg-dark-rgba h-100'}></div>
-            <div style={{zIndex: '999'}} className={'p-fixed bgc-white width-35 p1 mt-5 h-100 border-left-rounded'}>
+            <div style={{zIndex: '999'}} className={'p-fixed bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'}>
                 <div className={'width-100 dis-flex jc-end'}>
-                    <button className={'bg-none border-none transition-dot2 mb-1 bg-none-btn-hover w-3rem h-3rem circle'}><i className="bi bi-x-lg fs-1"></i></button>
+                    <button aria-label={'close'} className={'bg-none border-none transition-dot2 mb-1 bg-none-btn-hover w-3rem h-3rem circle'}><i className="bi bi-x-lg fs-1"></i></button>
                 </div>
                 <div className={'border-1-light-black roundeddot5'}>
                     <div className={'p1 border-bottom-1-light-black'}><h5>Visit More LinkedIn Products</h5></div>
@@ -65,7 +65,7 @@ function WorkRightSide(props) {
                         </div>
                     </div>
                 </div>
-                <div className={'mt-1 border-1-light-black roundeddot5'}>
+                <div className={'mt-1 mb-5 border-1-light-black roundeddot5'}>
                     <div className={'p1 border-bottom-1-light-black'}><h3>LinkedIn Business Services</h3></div>
                     <div className={'width-100'}>
                         <ul className={'list-unstyle width-100 border-bottom-1-light-black'}>
