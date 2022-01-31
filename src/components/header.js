@@ -2,6 +2,7 @@
 // Importing Part
 import React, { Component } from "react";
 import Settings from "./settings";
+import WorkRightSide from "./work-right-side";
 
 // A Function That Shows Setting Component When Clicked
 let tap = 0;
@@ -78,6 +79,7 @@ class Header extends Component {
                 </header>
                 <div id={'bg-dark-header'} className={'bg-dark-rgba show-on-click p-fixed width-100 h-100'} style={{zIndex: '997'}}></div>
                 <Settings id={'setting-component'} className="setting-holder pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
+                <WorkRightSide />
             </>
         );
     }
