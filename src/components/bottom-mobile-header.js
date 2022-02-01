@@ -7,45 +7,16 @@ import { showSettingComponent, showWorkRightSide} from './header';
 class BottomMobileHeader extends Component {
     render() {
         return (
-            <div>
-                <a href="#">
-                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 header-btn-active'}>
-                        <i className="bi bi-house-fill"></i>
-                        <h4>Home</h4>
-                    </button>
-                </a>
-                <a href="#">
-                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
-                        <i className="bi bi-people-fill"></i>
-                        <h4>My Network</h4>
-                    </button>
-                </a>
-                <a href="#">
-                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
-                        <i className="bi bi-bag-fill"></i>
-                        <h4>Jobs</h4>
-                    </button>
-                </a>
-                <a href="#">
-                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
-                        <i className="bi bi-chat-right-text-fill"></i>
-                        <h4>Massaging</h4>
-                    </button>
-                </a>
-                <a href="#">
-                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
-                        <i className="bi bi-bell-fill"></i>
-                        <h4>Notifications</h4>
-                    </button>
-                </a>
-                <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'} onClick={showSettingComponent}>
-                    <i className="bi bi-person-fill"></i>
-                    <h4>Me</h4>
-                </button>
-                <button onClick={showWorkRightSide} className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100'}>
-                    <i className="bi bi-grid-3x3-gap-fill"></i>
-                    <h4>Works</h4>
-                </button>
+            <div className={'p-fixed width-100 p1 bottom-0'} style={{zIndex: '999'}}>
+                <div className={'bgc-white dis-inline-flex p1 shadow ai-center width-100 jc-sb rounded1 border-1-light-black'}>
+                    <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem header-bottom-btn-active'}><i className="bi bi-house-fill fs-1"></i></button></a>
+                    <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-people-fill fs-1"></i></button></a>
+                    <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-bag-fill fs-1"></i></button></a>
+                    <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-chat-right-text-fill fs-1"></i></button></a>
+                    <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-bell-fill fs-1"></i></button></a>
+                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover border-bottom-c-none'} onClick={showSettingComponent}><i className="bi bi-person-fill fs-1"></i></button>
+                    <button onClick={showWorkRightSide} className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover'}><i className="bi bi-grid-3x3-gap-fill fs-1"></i></button>
+                </div>
             </div>
         );
     }
