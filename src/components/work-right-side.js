@@ -2,13 +2,11 @@
 // Importing Part
 import React from "react";
 
-// A Class Component That Holds Right Side Work Components Element
+// A Function Component That Holds Right Side Work Components Element
 function WorkRightSide(props) {
     return (
-        <div className={props.className} id={props.id}>
-            <div style={{zIndex: '997'}} className={'p-fixed width-100 bg-dark-rgba h-100'}></div>
-            <div style={{zIndex: '999'}}
-                 className={'work-right-side p-fixed bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'}>
+        <div className={props.className} id={props.id} style={props.style}>
+            <div style={{zIndex: '999'}} className={props.menuClassName}>
                 <div className={'width-100 dis-flex jc-end'}>
                     <button aria-label={'close'}
                             className={'bg-none border-none transition-dot2 mb-1 bg-none-btn-hover w-3rem h-3rem circle'}>
