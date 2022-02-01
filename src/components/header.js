@@ -17,8 +17,8 @@ function showSettingComponent() {
         settingComponent.classList.remove('show-on-click');
         bg_dark_header.classList.remove('show-on-click');
 
-        if (!work_right_side.classList.contains('left-100')) {
-            work_right_side.classList.add('left-100');
+        if (!work_right_side.classList.contains('show-on-click')) {
+            work_right_side.classList.add('show-on-click');
             tap2 --;
         }
     }
@@ -37,7 +37,7 @@ function showWorkRightSide() {
 
     tap2 ++;
     if (tap2 % 2 !== 0) {
-        work_right_side.classList.remove('left-100');
+        work_right_side.classList.remove('show-on-click');
         bg_dark_header.classList.remove('show-on-click');
 
         if (!settingComponent.classList.contains('show-on-click')) {
@@ -46,7 +46,7 @@ function showWorkRightSide() {
         }
     }
     else {
-        work_right_side.classList.add('left-100');
+        work_right_side.classList.add('show-on-click');
         bg_dark_header.classList.add('show-on-click');
     }
 }
@@ -109,7 +109,7 @@ class Header extends Component {
                 </header>
                 <div id={'bg-dark-header'} className={'bg-dark-rgba show-on-click p-fixed width-100 h-100'} style={{zIndex: '997'}}></div>
                 <Settings id={'setting-component'} className="setting-holder pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
-                <WorkRightSide menuClassName={'work-right-side shadow bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'} className={'dis-flex width-100 transition left-100 p-fixed jc-end z-index998'} id={'work-right-side'} style={{zIndex: '998'}}/>
+                <WorkRightSide className={'dis-flex minh-100vh p-fixed width-100 dis-flex jc-end ai-center mt-2 pt-1 pb-1 '} menuClassName={'work-right-side h-10vh scroller-none width-35 ov-scroll bgc-white p1 border-left-rounded shadow'} id={'work-right-side'} style={{zIndex: '998'}}/>
             </>
         );
     }

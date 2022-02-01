@@ -79,7 +79,7 @@ function WorkRightSide(props) {
                             <li className={'width-100'}>
                                 <a href="#" className={'width-100'}>
                                     <button
-                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none pdot5 bg-none-btn-hover'}>
+                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none p1 bg-none-btn-hover-light'}>
                                         <h4>Talent Solution</h4>
                                         <h5 className={'c-light-gray'}>Find, attract and recruit talent</h5>
                                     </button>
@@ -88,7 +88,7 @@ function WorkRightSide(props) {
                             <li className={'width-100'}>
                                 <a href="#" className={'width-100'}>
                                     <button
-                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none pdot5 bg-none-btn-hover'}>
+                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none p1 bg-none-btn-hover-light'}>
                                         <h4>Sales Solution</h4>
                                         <h5 className={'c-light-gray'}>Unlock sales opportunities</h5>
                                     </button>
@@ -97,7 +97,7 @@ function WorkRightSide(props) {
                             <li className={'width-100'}>
                                 <a href="#" className={'width-100'}>
                                     <button
-                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none pdot5 bg-none-btn-hover'}>
+                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none p1 bg-none-btn-hover-light'}>
                                         <h4>Post A Job For Free</h4>
                                         <h5 className={'c-light-gray'}>Get your job in front of quality
                                             candidates</h5>
@@ -107,7 +107,7 @@ function WorkRightSide(props) {
                             <li className={'width-100'}>
                                 <a href="#" className={'width-100'}>
                                     <button
-                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none pdot5 bg-none-btn-hover'}>
+                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none p1 bg-none-btn-hover-light'}>
                                         <h4>Marketing Solution</h4>
                                         <h5 className={'c-light-gray'}>Acquire customers and grow your business</h5>
                                     </button>
@@ -116,7 +116,7 @@ function WorkRightSide(props) {
                             <li className={'width-100'}>
                                 <a href="#" className={'width-100'}>
                                     <button
-                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none pdot5 bg-none-btn-hover'}>
+                                        className={'width-100 dis-flex flex-d-c jc-start bg-none border-none p1 bg-none-btn-hover-light'}>
                                         <h4>Learning Solution</h4>
                                         <h5 className={'c-light-gray'}>Develop talent across your organization</h5>
                                     </button>
