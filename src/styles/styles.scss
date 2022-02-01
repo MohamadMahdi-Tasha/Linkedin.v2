@@ -143,9 +143,12 @@ header {top: 0;}
 
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
-  .work-right-side {
-    width: 75%;
-    margin-top: 4rem;
+  .work-right-side-holder{
+    align-items: start;
+    .work-right-side {
+      width: 75%;
+      margin-top: 0;
+    }
   }
   .setting-holder {
     left: 0;
@@ -228,7 +231,16 @@ header {top: 0;}
 }
 
 @media (max-width: 650px) {
-  .work-right-side {width: 100%;}
+  .work-right-side-holder {
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    .work-right-side {
+      border-radius: 0;
+      width: 100%;
+      min-height: 100vh;
+    }
+  }
 
   header {
     .right-side {

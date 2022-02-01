@@ -109,7 +109,7 @@ class Header extends Component {
                 </header>
                 <div id={'bg-dark-header'} className={'bg-dark-rgba show-on-click p-fixed width-100 h-100'} style={{zIndex: '997'}}></div>
                 <Settings id={'setting-component'} className="setting-holder pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
-                <WorkRightSide className={'dis-flex minh-100vh p-fixed width-100 dis-flex jc-end ai-center mt-2 pt-1 pb-1 '} menuClassName={'work-right-side h-10vh scroller-none width-35 ov-scroll bgc-white p1 border-left-rounded shadow'} id={'work-right-side'} style={{zIndex: '998'}}/>
+                <WorkRightSide className={'work-right-side-holder dis-flex minh-100vh p-fixed width-100 dis-flex jc-end ai-center show-on-click mt-2 pt-1 pb-1 '} menuClassName={'work-right-side h-10vh scroller-none width-35 ov-scroll bgc-white p1 border-left-rounded shadow'} id={'work-right-side'} style={{zIndex: '998'}}/>
             </>
         );
     }
