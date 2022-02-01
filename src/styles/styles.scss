@@ -266,8 +266,10 @@ header {top: 0;}
     }
   }
 
+  .bottom-mobile-header {display: block;}
   header {
-
+    .left-side {width: 100%; > .search-div {width: 100%;} }
+    .right-side {display: none;}
   }
 
   .profile_cards-holder {
@@ -306,9 +308,11 @@ header {top: 0;}
   }
 }
 
-@media (max-width: 595px) {
-  h1 {
-    color: red !important;
+@media (max-width: 473px) {
+  .bottom-mobile-header > div > a > button,
+  .bottom-mobile-header > div > button{
+    width: 3rem;
+    height: 3rem;
   }
 }
 
