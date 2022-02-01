@@ -9,12 +9,18 @@ let tap = 0;
 
 function showSettingComponent() {
     const settingComponent = document.getElementById('setting-component');
+    const work_right_side = document.getElementById('work-right-side');
     const bg_dark_header = document.getElementById('bg-dark-header');
 
     tap ++;
     if (tap % 2 !== 0) {
         settingComponent.classList.remove('show-on-click');
         bg_dark_header.classList.remove('show-on-click');
+
+        if (!work_right_side.classList.contains('left-100')) {
+            work_right_side.classList.add('left-100');
+            tap2 --;
+        }
     }
     else {
         settingComponent.classList.add('show-on-click');
@@ -26,12 +32,18 @@ function showSettingComponent() {
 let tap2 = 0;
 function showWorkRightSide() {
     const work_right_side = document.getElementById('work-right-side');
+    const settingComponent = document.getElementById('setting-component');
     const bg_dark_header = document.getElementById('bg-dark-header');
 
     tap2 ++;
     if (tap2 % 2 !== 0) {
         work_right_side.classList.remove('left-100');
         bg_dark_header.classList.remove('show-on-click');
+
+        if (!settingComponent.classList.contains('show-on-click')) {
+            settingComponent.classList.add('show-on-click');
+            tap --;
+        }
     }
     else {
         work_right_side.classList.add('left-100');
@@ -97,7 +109,7 @@ class Header extends Component {
                 </header>
                 <div id={'bg-dark-header'} className={'bg-dark-rgba show-on-click p-fixed width-100 h-100'} style={{zIndex: '997'}}></div>
                 <Settings id={'setting-component'} className="setting-holder pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
-                <WorkRightSide menuClassName={'work-right-side bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'} className={'dis-flex width-100 left-100 p-fixed jc-end z-index998'} id={'work-right-side'} style={{zIndex: '998'}}/>
+                <WorkRightSide menuClassName={'work-right-side shadow bgc-white width-35 ov-scroll scroller-none p1 mt-5 h-100 border-left-rounded'} className={'dis-flex width-100 transition left-100 p-fixed jc-end z-index998'} id={'work-right-side'} style={{zIndex: '998'}}/>
             </>
         );
     }
