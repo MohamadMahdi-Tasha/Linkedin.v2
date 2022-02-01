@@ -161,10 +161,11 @@ header {top: 0;}
   }
   .middle-side-new-post-profile-pic {display: none;}
   header {
+    display: flex;
+    justify-content: space-between;
     .left-side {width: auto;}
     .right-side {width: 100%;}
     .search-div {width: auto;}
-    .search-input {display: none;}
   }
 
   .left-side-feed {
@@ -206,6 +207,21 @@ header {top: 0;}
 }
 
 @media (max-width: 860px) {
+  header > :nth-child(2) {
+    width: 50% !important;
+    > a > button {
+      width: 25%;
+
+      > h4 {
+        display: none;
+      }
+    }
+  }
+
+  header > :nth-child(2) > button > h4 {
+    display: none;
+  }
+
   .log-in-page {
     display: flex;
     flex-direction: column;
@@ -245,9 +261,7 @@ header {top: 0;}
   }
 
   header {
-    .right-side {
-      display: none;
-    }
+
   }
 
   .profile_cards-holder {
@@ -283,6 +297,12 @@ header {top: 0;}
         justify-content: center;
       }
     }
+  }
+}
+
+@media (max-width: 595px) {
+  h1 {
+    color: red !important;
   }
 }
 
