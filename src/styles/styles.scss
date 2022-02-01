@@ -128,10 +128,7 @@ header {top: 0;}
 .pointer-visible {pointer-events: visible;}
 .pdot75 {padding: 0.75rem;}
 .mt-5 {margin-top: 5rem;}
-.border-left-rounded {
-  border-bottom-left-radius: .5rem;
-  border-top-left-radius: .5rem;
-}
+.border-left-rounded {border-bottom-left-radius: .5rem;border-top-left-radius: .5rem;}
 .fs-1 {font-size: 1rem;}
 .w-3rem {width: 3rem;}
 .h-3rem {height: 3rem;}
@@ -139,11 +136,8 @@ header {top: 0;}
 .ov-scroll {overflow: scroll;}
 .scroller-none::-webkit-scrollbar {display: none;}
 .mb-5 {margin-bottom: 5rem;}
-.h-10vh {height: 80vh;}
-.header-bottom-btn-active {
-  background-color: $blue-color;
-  color: white;
-}
+.h-85vh {height: 85vh;}
+.header-bottom-btn-active {background-color: $blue-color;color: white;}
 .bottom-0 {bottom: 0;}
 
 
