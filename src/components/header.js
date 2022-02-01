@@ -3,11 +3,12 @@
 import React, { Component } from "react";
 import Settings from "./settings";
 import WorkRightSide from "./work-right-side";
+import BottomMobileHeader from './bottom-mobile-header';
 
 // A Function That Shows Setting Component When Clicked
 let tap = 0;
 
-function showSettingComponent() {
+export function showSettingComponent() {
     const settingComponent = document.getElementById('setting-component');
     const work_right_side = document.getElementById('work-right-side');
     const bg_dark_header = document.getElementById('bg-dark-header');
@@ -30,7 +31,7 @@ function showSettingComponent() {
 
 // A Function To Show WorkRightSide Component
 let tap2 = 0;
-function showWorkRightSide() {
+export function showWorkRightSide() {
     const work_right_side = document.getElementById('work-right-side');
     const settingComponent = document.getElementById('setting-component');
     const bg_dark_header = document.getElementById('bg-dark-header');
@@ -110,6 +111,7 @@ class Header extends Component {
                 <div id={'bg-dark-header'} className={'bg-dark-rgba show-on-click p-fixed width-100 h-100'} style={{zIndex: '997'}}></div>
                 <Settings id={'setting-component'} className="setting-holder pointer-none dis-flex mt-5 jc-end width-100 p-fixed pl-1 show-on-click pr-1"/>
                 <WorkRightSide className={'work-right-side-holder dis-flex minh-100vh p-fixed width-100 dis-flex jc-end ai-center show-on-click mt-2 pt-1 pb-1 '} menuClassName={'work-right-side h-10vh scroller-none width-35 ov-scroll bgc-white p1 border-left-rounded shadow'} id={'work-right-side'} style={{zIndex: '998'}}/>
+                <BottomMobileHeader />
             </>
         );
     }
