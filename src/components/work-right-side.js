@@ -7,11 +7,6 @@ function WorkRightSide(props) {
     return (
         <div className={props.className} id={props.id} style={props.style}>
             <div style={{zIndex: '999'}} className={props.menuClassName}>
-                <div className={'width-100 dis-flex jc-end'}>
-                    <button aria-label={'close'}
-                            className={'bg-none border-none transition-dot2 mb-1 bg-none-btn-hover w-3rem h-3rem circle'}>
-                        <i className="bi bi-x-lg fs-1"></i></button>
-                </div>
                 <div className={'border-1-light-black roundeddot5'}>
                     <div className={'p1 border-bottom-1-light-black'}><h5>Visit More LinkedIn Products</h5></div>
                     <div className={'p1 div1-items'}>
