@@ -68,7 +68,7 @@ function Settings(props) {
                     </ul>
                 </div>
                 <div className={'width-100'}>
-                    <button className={'width-100 border-none p1 bg-none bg-none-btn-hover'}>Sign Out</button>
+                    <button className={'width-100 border-none p1 bg-none bg-none-btn-hover setting-sign-out-btn'}>Sign Out</button>
                 </div>
             </div>
         </div>
