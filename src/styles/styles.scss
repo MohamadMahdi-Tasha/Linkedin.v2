@@ -144,10 +144,16 @@ header {top: 0;}
 // Media Querys For Show Good On Mobile And Tablet Devices
 @media (max-width: 1037px) {
   .work-right-side-holder{
+    background-color: red;
+    margin: 0;
+    padding: 0;
     align-items: start;
+    z-index: 999 !important;
     .work-right-side {
-      width: 75%;
-      margin-top: 0;
+      box-shadow: none;
+      border-radius: 0;
+      width: 100%;
+      min-height: 100vh;
     }
   }
   .setting-holder {
