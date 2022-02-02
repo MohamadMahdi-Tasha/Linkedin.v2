@@ -178,7 +178,8 @@ header {top: 0;}
       overflow: visible;
     }
     .p2 {padding: 0;}
-    .bottom-side , .middle-side{}
+    .bottom-side , .middle-side{display: none;}
+    .show-on-mobile {display: block;}
   }
 
   .feed-page {
