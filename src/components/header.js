@@ -71,40 +71,40 @@ class Header extends Component {
                         <a href="#">
                             <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 header-btn-active'}>
                                 <i className="bi bi-house-fill"></i>
-                                <h4>Home</h4>
+                                <h5 className={'fw-normal'}>Home</h5>
                             </button>
                         </a>
                         <a href="#">
                             <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
                                 <i className="bi bi-people-fill"></i>
-                                <h4>My Network</h4>
+                                <h5 className={'fw-normal'}>My Network</h5>
                             </button>
                         </a>
                         <a href="#">
                             <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
                                 <i className="bi bi-bag-fill"></i>
-                                <h4>Jobs</h4>
+                                <h5 className={'fw-normal'}>Jobs</h5>
                             </button>
                         </a>
                         <a href="#">
                             <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
                                 <i className="bi bi-chat-right-text-fill"></i>
-                                <h4>Massaging</h4>
+                                <h5 className={'fw-normal'}>Massaging</h5>
                             </button>
                         </a>
                         <a href="#">
                             <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'}>
                                 <i className="bi bi-bell-fill"></i>
-                                <h4>Notifications</h4>
+                                <h5 className={'fw-normal'}>Notifications</h5>
                             </button>
                         </a>
                         <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100 border-bottom-c-none'} onClick={showSettingComponent}>
                             <i className="bi bi-person-fill"></i>
-                            <h4>Me</h4>
+                            <h5 className={'fw-normal'}>Me</h5>
                         </button>
                         <button onClick={showWorkRightSide} className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover h-100'}>
                             <i className="bi bi-grid-3x3-gap-fill"></i>
-                            <h4>Works</h4>
+                            <h5 className={'fw-normal'}>Works</h5>
                         </button>
                     </div>
                 </header>
