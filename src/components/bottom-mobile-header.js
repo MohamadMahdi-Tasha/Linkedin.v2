@@ -14,8 +14,8 @@ class BottomMobileHeader extends Component {
                     <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-bag-fill fs-1"></i></button></a>
                     <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-chat-right-text-fill fs-1"></i></button></a>
                     <a href="#"><button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem border-bottom-c-none'}><i className="bi bi-bell-fill fs-1"></i></button></a>
-                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover border-bottom-c-none'} onClick={showSettingComponent}><i className="bi bi-person-fill fs-1"></i></button>
-                    <button onClick={showWorkRightSide} className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover'}><i className="bi bi-grid-3x3-gap-fill fs-1"></i></button>
+                    <button className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover border-bottom-c-none circle w-4rem h-4rem'} onClick={showSettingComponent}><i className="bi bi-person-fill fs-1"></i></button>
+                    <button onClick={showWorkRightSide} className={'dis-flex flex-d-c jc-center ai-center pdot5 bg-none border-none bg-none-btn-hover circle w-4rem h-4rem'}><i className="bi bi-grid-3x3-gap-fill fs-1"></i></button>
                 </div>
             </div>
         );

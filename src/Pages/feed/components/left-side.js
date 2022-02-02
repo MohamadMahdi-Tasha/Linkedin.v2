@@ -32,7 +32,6 @@ class Left_Side extends Component {
                         </button>
                     </div>
                 </div>
-                <button className={'width-100 p1 border-none bgc-white bg-none-btn-hover border-1-light-black roundeddot5 show-on-mobile'}>See More</button>
                 <div className="bottom-side bgc-white ov-hidden roundeddot5">
                     <ul className={'list-unstyle'}>
                         <li className={'width-100'}>
